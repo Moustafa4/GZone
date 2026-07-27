@@ -3,14 +3,14 @@ import { provideRouter } from '@angular/router';
 import { providePrimeNG } from 'primeng/config';
 
 import { routes } from './app.routes';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { provideClientHydration, withEventReplay, withNoIncrementalHydration } from '@angular/platform-browser';
 import Aura from '@primeng/themes/aura';
 import { Theme } from '@primeng/themes';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
-    provideClientHydration(withEventReplay()),
+    provideClientHydration(withEventReplay(), withNoIncrementalHydration()),
     providePrimeNG({
       theme: {
         preset: Aura,

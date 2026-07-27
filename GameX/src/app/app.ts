@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DatePicker } from 'primeng/datepicker';
 import { FormsModule } from '@angular/forms';
@@ -8,6 +8,7 @@ import { InputTextModule } from 'primeng/inputtext';@Component({
   imports: [ DatePicker, FloatLabelModule],
 
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.scss',
 })
 export class App {
