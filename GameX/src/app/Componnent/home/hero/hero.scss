@@ -1,0 +1,210 @@
+.hero_section {
+  background-image: linear-gradient(90deg, #0000003b), url(/Heros_Img/Home_Hero.webp);
+  background-size: cover;
+  height: 600px;
+  border: 1px solid red;
+  position: relative;
+}
+p {
+  margin: 0;
+  letter-spacing: 2px;
+}
+.bi,
+.pi {
+  color: #a00cce;
+}
+.icons_con .text .p1 {
+  color: var(--textcolor-primary);
+}
+.icons_con .text .p2 {
+  color: var(--color-text-muted);
+}
+.span_text span {
+  font-family: 'Cairo';
+  color: var(--textcolor-primary);
+}
+// ===========================================================End Golobal==========================================================
+
+
+.btn .btn-show button {
+  background: transparent;
+  color: #04c9da;
+  border: 1px solid #04c8daa9;
+}
+/* Mobile */
+
+@media (max-width: 767px) {
+  .hero_section {
+    background-image: linear-gradient(90deg, #0000003b), url(/Heros_Img/Home_Hero.webp);
+    background-size: cover;
+    height: 600px;
+    border: 1px solid red;
+    position: relative;
+  }
+  .hero_Componnent {
+    position: absolute;
+    width: 100%;
+
+    top: -1%;
+    right: 195px;
+    transform: translate(50%, 50%);
+  }
+  .span_text span {
+    font-size: 16px;
+  }
+  .hero_text {
+    border: 1px solid green;
+    padding: 0 15px 0 0;
+
+    h1 {
+      font-size: 30px;
+      margin: 0;
+
+      span {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0 5px 0;
+      }
+      .sp1 {
+        background: linear-gradient(180deg, #d0a9ff 0%, #d0a9ff 10%, #7b2cbf 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+      .sp2 {
+        // background: linear-gradient(180deg, #b85cec 0%, #5e00cc 100%, #5186e1 100%);
+        background: linear-gradient(180deg, #d0a9ff 0%, #5e00cc 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 20;
+      }
+      .sp3 {
+        background: linear-gradient(180deg, #d0a9ff 0% 0%, #7b2cbf 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    p {
+      display: inline-block;
+      font-family: 'Almarai';
+      font-weight: 800;
+      font-size: 40px;
+      background: linear-gradient(180deg, #7090fc 0% 40%, #2001cf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      padding: 0 0 5px 0;
+      margin: 0;
+    }
+  }
+  .icons_con .text .p1,
+  .icons_con .text .p2 {
+    font-size: 10px;
+    padding-right: 10px;
+  }
+   .bi,
+  .pi {
+    font-size: 20px;
+  }
+  .btn button {
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  .hero_Componnent {
+    position: absolute;
+    width: 40%;
+
+    top: -25%;
+    right: 38%;
+    transform: translate(50%, 50%);
+  }
+  .span_text span {
+    font-size: 24px;
+  }
+  .hero_text {
+    border: 1px solid green;
+
+    h1 {
+      font-size: 74px;
+      margin: 0;
+
+      span {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0 5px 0;
+      }
+      .sp1 {
+        background: linear-gradient(180deg, #d0a9ff 0%, #d0a9ff 10%, #7b2cbf 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+      .sp2 {
+        // background: linear-gradient(180deg, #b85cec 0%, #5e00cc 100%, #5186e1 100%);
+        background: linear-gradient(180deg, #d0a9ff 0%, #5e00cc 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 20;
+      }
+      .sp3 {
+        background: linear-gradient(180deg, #d0a9ff 0% 0%, #7b2cbf 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    p {
+      display: inline-block;
+      font-family: 'Almarai';
+      font-weight: 800;
+      font-size: 64px;
+      background: linear-gradient(180deg, #7090fc 0% 40%, #2001cf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      padding: 0 0 5px 0;
+      margin: 0;
+    }
+  }
+  .icons_con .text .p1,
+  .icons_con .text .p2 {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+  .bi,
+  .pi {
+    font-size: 40px;
+  }
+  .btn button {
+  height: 50px;
+  padding: 0px 50px;
+  border-radius: 5px;
+}
+}

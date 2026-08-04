@@ -1,1 +1,147 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'primeicons/primeicons.css';
+
+// ==== 1. الخطوط ====
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+// ==== 2. الألوان والمتغيرات العامة (Design Tokens) ====
+:root {
+  // ألوان الهوية
+  --color-primary: #1a1a4d;
+  --color-primary-light: #4b3fdb;
+  --color-accent: #ffcc00;
+  --bacground-primary: #010617;
+  --textcolor-primary: #ffffff;
+  --textcolor-sec: #a1a1aa;
+
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f7f8fc;
+  --color-border: #e5e7eb;
+
+  // الخطوط
+  @font-face {
+    font-family: 'Almarai';
+    src: url('/Fonts/Almarai-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Cairo';
+    src: url('/Fonts/CairoPlay-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  --font-family-base: 'Almarai', 'Cairo';
+  --font-size-sm: 13px;
+  --font-size-base: 15px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+
+  // مسافات موحدة
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+
+  // زوايا واستدارة
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  // ظل موحد للكروت
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+// ==== 3. تنسيقات عامة على كل الصفحة ====
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background: var(--bacground-primary);
+}
+h1 {
+  font-family: Almarai;
+  font-weight: 800;
+}
+h2,
+h3,
+h4 {
+  font-family: Cairo;
+  font-weight: 500;
+}
+
+a {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+// ==== 4. Utility classes بسيطة تستخدمها في أي مكان ====
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--spacing-md);
+}
+
+// ==== 5. تدرجات النصوص (Gradient Text) ====
+
+:root {
+  --gradient-purple: linear-gradient(90deg, #e8d1f8 0%, #c49ef9 50%, #aa43e0 100%);
+  --gradient-blue1: linear-gradient(90deg, #5da6f7 0%, #61adfb 40%, #3d86cb 100%);
+  --gradient-blue2: linear-gradient(90deg, #7b2cfb 0%, #00d4ff 100%);
+  --gradient-blue3: linear-gradient(180deg, #f5c0fb 0%, #8b45d0 50%, #5186e1 100%);
+  --gradient-blue4: linear-gradient(90deg, #ff2ed6 0%, #7b2cfb 100%);
+
+  --gradient-hero: linear-gradient(135deg, #c49ef9 0%, #aa43e0 30%, #5da6f7 70%, #3d86cb 100%);
+  --gradient-btn-primary: linear-gradient(90deg, #8b1ac9 0%, #4020cc 100%);
+}
+
+// كلاس عام لأي نص عايز تديله تدرج
+.text-gradient {
+  background: var(--gradient-blue); // الافتراضي - غيّره بالـ modifier classes تحت
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; // عشان الخلفية تتحسب صح على حجم النص
+}
+
+// Modifiers لو عايز تدرج معين بدل الافتراضي
+.text-gradient--purple {
+  background: var(--gradient-purple);
+}
+
+.text-gradient--blue {
+  background: var(--gradient-blue);
+}
+
+// كلاس للأزرار اللي فيها تدرج (زي "تسوق الآن")
+.btn-gradient {
+  background: var(--gradient-btn-primary);
+  color: #fff;
+  border: none;
+  // border-radius: var(--radius-md);
+  // padding: 12px 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  html,
+  body {
+    padding: 0px 40px;
+  }
+}

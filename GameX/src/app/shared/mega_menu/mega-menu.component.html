@@ -1,0 +1,39 @@
+<div class="mega-menu-wrapper" (mouseenter)="openMenu()" (mouseleave)="closeMenu()">
+
+<button pButton pRipple type="button">
+  <i class="pi pi-bars" pButtonIcon></i>
+  <span pButtonLabel>{{ buttonLabel }}</span>
+</button>  <div class="mega-menu" *ngIf="isMenuOpen">
+
+    <ul class="sidebar">
+      <li
+        *ngFor="let cat of categories"
+        pRipple
+        [class.active]="activeCategory === cat"
+        (mouseenter)="showCategory(cat)">
+        <i [class]="cat.icon"></i>
+        <span class="cat-name">{{ cat.name }}</span>
+        <i class="pi pi-angle-right arrow"></i>
+      </li>
+    </ul>
+
+    <div class="panel" *ngIf="activeCategory && activeCategory.subCategories.length">
+      <div class="panel-header">
+        <h3>{{ activeCategory.name }}</h3>
+        <button pButton pRipple type="button" label="View all" class="p-button-sm view-all-btn"></button>
+      </div>
+
+      <div class="sub-grid">
+        <a href="#" class="sub-card" *ngFor="let sub of activeCategory.subCategories" (click)="onSubClick(sub)">
+          <img [src]="sub.image" [alt]="sub.name" />
+          <span>{{ sub.name }}</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="panel empty" *ngIf="activeCategory && !activeCategory.subCategories.length">
+      <p>لا توجد عناصر فرعية لهذا القسم بعد.</p>
+    </div>
+
+  </div>
+</div>

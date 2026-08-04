@@ -1,11 +1,10 @@
 import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { DatePicker } from 'primeng/datepicker';
-import { FormsModule } from '@angular/forms';
 import { FloatLabelModule } from 'primeng/floatlabel';
-import { InputTextModule } from 'primeng/inputtext';@Component({
+import { MegaMenuComponent } from "./shared/mega_menu/mega-menu.component";
+import { Home } from "./Componnent/home/home";
+@Component({
   selector: 'app-root',
-  imports: [ DatePicker, FloatLabelModule],
+  imports: [FloatLabelModule, Home],
 
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
