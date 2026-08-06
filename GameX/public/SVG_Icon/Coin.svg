@@ -1,0 +1,112 @@
+<svg width="100" height="100" viewBox="0 0 100 100"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF08A"/>
+      <stop offset="35%" stop-color="#FFD43B"/>
+      <stop offset="70%" stop-color="#F5A900"/>
+      <stop offset="100%" stop-color="#C97900"/>
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE875"/>
+      <stop offset="100%" stop-color="#E99A00"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="1" dy="4" stdDeviation="2.5"
+                    flood-color="#000000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <!-- الخلفية/العملة الخلفية -->
+  <g filter="url(#shadow)">
+    <ellipse cx="58" cy="32" rx="27" ry="12"
+             fill="url(#gold)"
+             stroke="#C47B00"
+             stroke-width="2"/>
+
+    <path d="M31 32v9c0 6.6 12.1 12 27 12s27-5.4 27-12v-9"
+          fill="url(#goldLight)"
+          stroke="#C47B00"
+          stroke-width="2"/>
+
+    <ellipse cx="58" cy="32" rx="27" ry="12"
+             fill="url(#gold)"
+             stroke="#D28A00"
+             stroke-width="2"/>
+
+    <ellipse cx="58" cy="32" rx="19" ry="7"
+             fill="none"
+             stroke="#F7B900"
+             stroke-width="2"/>
+
+    <ellipse cx="58" cy="30" rx="8" ry="3"
+             fill="#FFF0A0"
+             opacity=".55"/>
+  </g>
+
+  <!-- العملة الأمامية اليسار -->
+  <g filter="url(#shadow)">
+    <ellipse cx="38" cy="55" rx="27" ry="12"
+             fill="url(#gold)"
+             stroke="#C47B00"
+             stroke-width="2"/>
+
+    <path d="M11 55v9c0 6.6 12.1 12 27 12s27-5.4 27-12v-9"
+          fill="url(#goldLight)"
+          stroke="#C47B00"
+          stroke-width="2"/>
+
+    <ellipse cx="38" cy="55" rx="27" ry="12"
+             fill="url(#gold)"
+             stroke="#D28A00"
+             stroke-width="2"/>
+
+    <ellipse cx="38" cy="55" rx="19" ry="7"
+             fill="none"
+             stroke="#F7B900"
+             stroke-width="2"/>
+
+    <!-- رمز العملة -->
+    <path d="M38 49v12M34 51c1.5-2 8-2 8 1
+             c0 3-8 2-8 5s6.5 3 8 1"
+          fill="none"
+          stroke="#D38A00"
+          stroke-width="2.2"
+          stroke-linecap="round"/>
+
+    <ellipse cx="30" cy="51" rx="7" ry="2.5"
+             fill="#FFF2A6"
+             opacity=".5"/>
+  </g>
+
+  <!-- العملة الأمامية اليمين -->
+  <g filter="url(#shadow)">
+    <ellipse cx="67" cy="62" rx="22" ry="10"
+             fill="url(#gold)"
+             stroke="#C47B00"
+             stroke-width="2"/>
+
+    <path d="M45 62v8c0 5.5 9.8 10 22 10s22-4.5 22-10v-8"
+          fill="url(#goldLight)"
+          stroke="#C47B00"
+          stroke-width="2"/>
+
+    <ellipse cx="67" cy="62" rx="22" ry="10"
+             fill="url(#gold)"
+             stroke="#D28A00"
+             stroke-width="2"/>
+
+    <ellipse cx="67" cy="62" rx="15" ry="5.5"
+             fill="none"
+             stroke="#F7B900"
+             stroke-width="1.8"/>
+
+    <ellipse cx="61" cy="59" rx="6" ry="2"
+             fill="#FFF2A6"
+             opacity=".55"/>
+  </g>
+
+</svg>

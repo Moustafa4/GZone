@@ -1,0 +1,88 @@
+.container-fluid{
+    border: 1px solid red;
+}
+swiper-container {
+  display: block;
+  width: 100%;
+}
+
+.game-card {
+  width: 80%;   // ← ده أهم سطر، بدل 200px أو أي رقم ثابت
+  box-sizing: border-box;
+  background: #111827;
+  border: 1px solid #24344e;
+  border-radius: 14px;
+  overflow: hidden;
+  color: #fff;
+  transition: 0.3s;
+  position: relative;
+}
+
+.game-card:hover {
+  border-color: #4f46e5;
+  transform: translateY(-5px);
+}
+
+.game-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background: #ef4444;
+  color: #fff;
+
+  padding: 4px 10px;
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 12px 10px 4px;
+  font-size: 18px;
+}
+
+p {
+  margin: 0 10px;
+  color: #b9bfd1;
+  font-size: 13px;
+  min-height: 40px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+}
+
+.cart {
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #6d28d9;
+  color: white;
+
+  cursor: pointer;
+}
+
+.price span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price small {
+  margin-left: 5px;
+  color: #bbb;
+}

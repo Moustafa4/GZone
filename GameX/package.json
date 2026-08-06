@@ -40,6 +40,7 @@
     "primeicons": "^8.0.0",
     "primeng": "^22.0.0",
     "rxjs": "~7.8.0",
+    "swiper": "^14.0.7",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
