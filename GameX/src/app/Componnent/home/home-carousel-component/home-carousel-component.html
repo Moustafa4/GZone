@@ -1,38 +1,46 @@
 <div class="container-fluid mt-5">
-  <swiper-container
-    space-between="10"
-    navigation="true"
-    loop="true"
-    breakpoints='{
-    "320": { "slidesPerView": 1 },
-    "768": { "slidesPerView": 2 },
-    "1024": { "slidesPerView": 3 },
-    "1400": { "slidesPerView": 5 }
-  }'
-  >
-    @for (product of products; track product.name) {
-      <swiper-slide>
-        <div class="game-card">
-          <span class="badge">{{ product.badge }}</span>
-
-          <img [src]="product.image" class="game-image" [alt]="product.name" />
-
-          <h3>{{ product.name }}</h3>
-
-          <p>{{ product.description }}</p>
-
-          <div class="price">
-            <button class="cart">
-              <i class="pi pi-shopping-cart"></i>
-            </button>
-
-            <div>
-              <small>ر.س</small>
-              <span>{{ product.price }}</span>
+  <div class="swiper-wrapper-outer">
+    <swiper-container
+      space-between="10"
+      navigation="true"
+      loop="true"
+      breakpoints='{
+        "320": { "slidesPerView": 1 },
+        "768": { "slidesPerView": 2 },
+        "1024": { "slidesPerView": 3 },
+        "1400": { "slidesPerView": 5 }
+      }'
+    >
+      @for (product of products; track product.name) {
+        <swiper-slide>
+          <div class="game-card">
+            <div class="Box_Shadow">
+              <span
+                class="badge"
+                [ngClass]="{
+                  new: product.badge === 'جديد',
+                  'best-seller': product.badge === 'الأكثر مبيعاً',
+                }"
+                >{{ product.badge }}</span
+              >
+              <div class="img_con">
+                <img [src]="product.image" class="game-image" [alt]="product.name" />
+              </div>
+              <h3>{{ product.name }}</h3>
+              <p>{{ product.description }}</p>
+              <div class="price">
+                <button class="cart">
+                  <i class="pi pi-shopping-cart"></i>
+                </button>
+                <div>
+                  <span>{{ product.price }}</span>
+                  <p>ر.س</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </swiper-slide>
-    }
-  </swiper-container>
+        </swiper-slide>
+      }
+    </swiper-container>
+  </div>
 </div>

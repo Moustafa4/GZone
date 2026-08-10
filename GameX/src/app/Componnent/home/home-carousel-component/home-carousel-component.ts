@@ -1,7 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'app-home-carousel-component',
-  imports: [],
+  imports: [CommonModule],
   standalone: true,
 
   templateUrl: './home-carousel-component.html',
@@ -12,56 +13,56 @@ export class HomeCarouselComponent {
   products = [
     {
       name: 'Phone',
-      image: 'assets/images/phone.png',
-      price: 500,
+      image: '/product/p1.png',
+      price: '500',
       badge: 'جديد',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',
     },
     {
       name: 'Laptop',
-      image: 'assets/images/laptop.png',
+      image: '/product/p1.png',
       price: 1200,
       badge: 'الأكثر مبيعاً',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',
     },
     {
       name: 'Laptop',
-      image: 'assets/images/laptop.png',
+      image: '/product/p1.png',
       price: 1200,
       badge: 'الأكثر مبيعاً',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',
     },
     {
       name: 'Laptop',
-      image: 'assets/images/laptop.png',
+      image: '/product/p1.png',
       price: 1200,
       badge: 'الأكثر مبيعاً',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',
     },
     {
       name: 'Laptop',
-      image: 'assets/images/laptop.png',
+      image: '/product/p1.png',
       price: 1200,
       badge: 'الأكثر مبيعاً',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',
     },
     {
       name: 'Laptop',
-      image: 'assets/images/laptop.png',
+      image: '/product/p1.png',
       price: 1200,
       badge: 'الأكثر مبيعاً',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',
     },
     {
       name: 'Laptop',
-      image: 'assets/images/laptop.png',
+      image: '/product/p1.png',
       price: 1200,
       badge: 'الأكثر مبيعاً',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',
     },
     {
       name: 'Laptop',
-      image: 'assets/images/laptop.png',
+      image: '/product/p1.png',
       price: 1200,
       badge: 'الأكثر مبيعاً',
       description: 'losadsadskaldsadsakdjlsadsadsaiuodjksamdsaidjksaldmsadjknsm',

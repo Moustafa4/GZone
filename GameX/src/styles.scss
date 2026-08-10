@@ -10,7 +10,7 @@
   --color-primary: #1a1a4d;
   --color-primary-light: #4b3fdb;
   --color-accent: #ffcc00;
-  --bacground-primary: #010617;
+  --bacground-primary: #01081c;
   --textcolor-primary: #ffffff;
   --textcolor-sec: #a1a1aa;
 
@@ -40,19 +40,6 @@
   --font-size-base: 15px;
   --font-size-lg: 20px;
   --font-size-xl: 28px;
-
-  // مسافات موحدة
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-
-  // زوايا واستدارة
-  --radius-sm: 6px;
-  --radius-md: 10px;
-
-  // ظل موحد للكروت
-  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 // ==== 3. تنسيقات عامة على كل الصفحة ====
@@ -112,7 +99,7 @@ a {
 
 // كلاس عام لأي نص عايز تديله تدرج
 .text-gradient {
-  background: var(--gradient-blue); // الافتراضي - غيّره بالـ modifier classes تحت
+  background: var(--gradient-blue1); // الافتراضي - غيّره بالـ modifier classes تحت
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

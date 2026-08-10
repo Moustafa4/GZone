@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-12 col-md-6 col-xl-6 col-xxl-6">
+      <div class="text">
+        <h1>خصومات تصل الي</h1>
+        <p>40%</p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-12 col-md-6 col-xl-6 col-xxl-6">
+      <div class="Cutdown_text">
+        <h1>عرض محدود</h1>
+        <p>ينتهي في</p>
+      </div>
+      <div class="countdown">
+        <div class="time-box">
+          <span class="number">
+            {{ days() | number: '2.0-0' }}
+          </span>
+
+          <span class="label"> أيام </span>
+        </div>
+
+        <span class="separator">:</span>
+
+        <div class="time-box">
+          <span class="number">
+            {{ hours() | number: '2.0-0' }}
+          </span>
+
+          <span class="label"> ساعات </span>
+        </div>
+
+        <span class="separator">:</span>
+
+        <div class="time-box">
+          <span class="number">
+            {{ minutes() | number: '2.0-0' }}
+          </span>
+
+          <span class="label"> دقائق </span>
+        </div>
+
+        <span class="separator">:</span>
+
+        <div class="time-box">
+          <span class="number">
+            {{ seconds() | number: '2.0-0' }}
+          </span>
+
+          <span class="label"> ثواني </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
