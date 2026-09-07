@@ -1,0 +1,75 @@
+.test-card .test_con h1 {
+  font-size: 18px;
+  color: white;
+  border: 1px solid red;
+  width: 50%;
+}
+.test-card {
+  background-color: #0f1b35;
+  border-radius: 16px;
+  padding: 30px 24px 13px;
+  direction: rtl;
+  position: relative;
+  max-width: 488px;
+  color: white;
+  min-height: 290px;
+  margin-bottom: 15px;
+  .topcon {
+    display: flex;
+  }
+  .quote-icon {
+    font-size: 100px;
+    color: #4a5a7a;
+    line-height: 1;
+    margin-bottom: 12px;
+    text-align: right;
+    height: 20px;
+  }
+
+  .comment {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+    color: #cdd5e0;
+    margin-bottom: 28px;
+    margin-top: 32px;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      .name {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .stars {
+        span {
+          color: #f5c518;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+  }
+}
+swiper-container{
+  --swiper-pagination-color: #7c3aed;
+  --swiper-pagination-bullet-inactive-color: #6b7280;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}

@@ -9,7 +9,7 @@ import { Component, computed, input, signal } from '@angular/core';
 })
 export class OfferBanner {
 
-  private readonly defaultDate = '2026-08-20T23:59:59';
+  private readonly defaultDate = '2027-05-20T23:59:59';
 
   readonly TargetDate = input<string>(this.defaultDate);
 

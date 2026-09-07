@@ -1,4 +1,4 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5" >
   <div class="swiper-wrapper-outer">
     <swiper-container
       space-between="10"
@@ -14,7 +14,6 @@
       @for (product of products; track product.name) {
         <swiper-slide>
           <div class="game-card">
-            <div class="Box_Shadow">
               <span
                 class="badge"
                 [ngClass]="{
@@ -38,7 +37,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </swiper-slide>
       }
     </swiper-container>

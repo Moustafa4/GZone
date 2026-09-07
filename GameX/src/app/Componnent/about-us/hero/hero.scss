@@ -1,0 +1,265 @@
+.hero_Con {
+  background:
+    linear-gradient(135deg, #07001400 0%, #00000085 45%, #000000 100%),
+    url(/Image/benner/aboutus/Hero_about.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.text {
+  color: white;
+  border: 1px solid red;
+  position: absolute;
+  text-align: justify;
+
+  span {
+    background: var(--gradient-hero);
+    // background: linear-gradient(to right, #ff6eff, #c044ff, #7b2fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  P:first-of-type {
+    color: var(--textcolor-primary);
+  }
+  P:last-of-type {
+    color: var(--textcolor-sec);
+  }
+}
+.goals {
+  border: 1px solid #281d60;
+  display: flex;
+  color: white;
+  box-shadow: 0 4px 30px -7px rgb(32 1 207 / 78%);
+  background: #040921;
+  i {
+    color: #9243ea;
+  }
+}
+/* Mobile */
+
+@media (max-width: 767px) {
+  .hero_Con {
+    height: 680px;
+  }
+
+  .text {
+    width: 100%;
+    position: absolute;
+    top: 33%;
+    right: 0%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  P:first-of-type {
+    font-size: 28px;
+  }
+  P:last-of-type {
+    font-size: 16px ;
+    line-height: 2;
+  }
+
+  .goals {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: 100%;
+    padding: 9px 20px;
+    i {
+      font-size: 50px;
+
+      color: #9243ea;
+      margin-left: 30px;
+    }
+    p:first-of-type {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero_Con {
+    height: 400px;
+  }
+
+  .text {
+    width: 41%;
+    position: absolute;
+    top: 11%;
+    right: 5%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  P:first-of-type {
+    font-size: 18px;
+  }
+  P:last-of-type {
+    font-size: 13px ;
+    line-height: 2;
+  }
+
+  .goals {
+    position: absolute;
+    top: 65%;
+    right: 5%;
+    width: 40%;
+    padding: 9px 20px;
+    i {
+      font-size: 50px;
+
+      color: #9243ea;
+      margin-left: 30px;
+    }
+    p:first-of-type {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) and (max-width:1200px){
+  .hero_Con {
+    background:
+      linear-gradient(135deg, #07001400 0%, #00000085 45%, #000000 100%),
+      url(/Image/benner/aboutus/Hero_about.png);
+
+    background-size: cover;
+    background-position: -163px;
+    height: 600px;
+  }
+
+  .text {
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  P:first-of-type {
+    font-size: 25px;
+  }
+  P:last-of-type {
+    font-size: 18px ;
+    line-height: 2;
+  }
+
+  .goals {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    width: 40%;
+    padding: 9px 20px;
+    i {
+      font-size: 50px;
+
+      color: #9243ea;
+      margin-left: 30px;
+    }
+    p:first-of-type {
+      font-size: 20px;
+    }
+    P:last-of-type {
+      font-size: 15px;
+      line-height: 2;
+    }
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1201px) and (max-width: 1488px) {
+  .hero_Con {
+    background:
+      linear-gradient(135deg, #07001400 0%, #00000085 45%, #000000 100%),
+      url(/Image/benner/aboutus/Hero_about.png);
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .text {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    text-align: justify;
+    h1 {
+      font-size: 60px;
+    }
+
+    P:first-of-type {
+      font-size: 28px;
+    }
+    P:last-of-type {
+      font-size: 15px;
+      line-height: 2;
+    }
+  }
+  .goals {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    width: 27%;
+    padding: 9px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px -7px rgb(32 1 207 / 78%);
+    i {
+      color: #9243ea;
+      font-size: 50px;
+      margin-left: 20px;
+    }
+  }
+}
+@media  (min-width: 1489px) {
+  .hero_Con {
+    background:
+      linear-gradient(135deg, #07001400 0%, #00000085 45%, #000000 100%),
+      url(/Image/benner/aboutus/Hero_about.png);
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .text {
+    width: 24%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    text-align: justify;
+    h1 {
+      font-size: 60px;
+    }
+
+    P:first-of-type {
+      font-size: 28px;
+    }
+    P:last-of-type {
+      font-size: 15px;
+      line-height: 2;
+    }
+  }
+  .goals {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    width: 20%;
+    padding: 9px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px -7px rgb(32 1 207 / 78%);
+    i {
+      color: #9243ea;
+      font-size: 50px;
+      margin-left: 20px;
+    }
+  }
+}

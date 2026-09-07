@@ -4,10 +4,11 @@ import { CategoriesSection } from './categories-section/categories-section';
 import { HomeCarouselComponent } from './home-carousel-component/home-carousel-component';
 import { OfferBanner } from "./offer-banner/offer-banner";
 import { ServiceFeatures } from "./service-features/service-features";
+import { TestimonialsComponent } from "./testimonials-component/testimonials-component";
 
 @Component({
   selector: 'app-home',
-  imports: [Hero, CategoriesSection, HomeCarouselComponent, OfferBanner, ServiceFeatures],
+  imports: [Hero, CategoriesSection, HomeCarouselComponent, OfferBanner, ServiceFeatures, TestimonialsComponent],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

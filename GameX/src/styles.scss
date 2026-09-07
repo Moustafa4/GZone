@@ -53,7 +53,10 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   color: var(--color-text);
-  background: var(--bacground-primary);
+  // background: var(--bacground-primary);
+    // background: linear-gradient(135deg, #070014 0%, #10052f 45%, #07011c 100%);
+      background: linear-gradient(135deg, #070014 0%, #10052f 45%, #11043e 100%);
+
 }
 h1 {
   font-family: Almarai;
@@ -127,8 +130,12 @@ a {
   cursor: pointer;
 }
 @media (min-width: 1200px) {
-  html,
-  body {
+ body,html {
     padding: 0px 20px;
+  }
+  app-about-us {
+    display: block;
+    width: calc(100% + 80px);
+    margin-inline: -40px;
   }
 }
