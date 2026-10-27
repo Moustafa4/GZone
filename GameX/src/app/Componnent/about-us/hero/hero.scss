@@ -8,7 +8,7 @@
 }
 .text {
   color: white;
-  border: 1px solid red;
+  // border: 1px solid red;
   position: absolute;
   text-align: justify;
 
@@ -57,7 +57,7 @@
     font-size: 28px;
   }
   P:last-of-type {
-    font-size: 16px ;
+    font-size: 16px;
     line-height: 2;
   }
 
@@ -100,7 +100,7 @@
     font-size: 18px;
   }
   P:last-of-type {
-    font-size: 13px ;
+    font-size: 13px;
     line-height: 2;
   }
 
@@ -124,7 +124,7 @@
 
 /* Medium Screens */
 
-@media (min-width: 992px) and (max-width:1200px){
+@media (min-width: 992px) and (max-width: 1200px) {
   .hero_Con {
     background:
       linear-gradient(135deg, #07001400 0%, #00000085 45%, #000000 100%),
@@ -149,7 +149,7 @@
     font-size: 25px;
   }
   P:last-of-type {
-    font-size: 18px ;
+    font-size: 18px;
     line-height: 2;
   }
 
@@ -220,7 +220,7 @@
     }
   }
 }
-@media  (min-width: 1489px) {
+@media (min-width: 1489px) {
   .hero_Con {
     background:
       linear-gradient(135deg, #07001400 0%, #00000085 45%, #000000 100%),

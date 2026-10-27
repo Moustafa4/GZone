@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'primeicons/primeicons.css';
-@use "swiper/css";
-@use "swiper/css/navigation";
-@use "swiper/css/pagination";
+@use 'swiper/css';
+@use 'swiper/css/navigation';
+@use 'swiper/css/pagination';
 
 // ==== 2. الألوان والمتغيرات العامة (Design Tokens) ====
 :root {
@@ -35,6 +35,20 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: 'HughsonReg';
+    src: url('/Fonts/Hughson-Regular.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'HughsonIt';
+    src: url('/Fonts/HughsonAlt-Italic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
   --font-family-base: 'Almarai', 'Cairo';
   --font-size-sm: 13px;
   --font-size-base: 15px;
@@ -54,9 +68,8 @@ body {
   font-size: var(--font-size-base);
   color: var(--color-text);
   // background: var(--bacground-primary);
-    // background: linear-gradient(135deg, #070014 0%, #10052f 45%, #07011c 100%);
-      background: linear-gradient(135deg, #070014 0%, #10052f 45%, #11043e 100%);
-
+  // background: linear-gradient(135deg, #070014 0%, #10052f 45%, #07011c 100%);
+  background: linear-gradient(135deg, #070014 0%, #10052f 45%, #11043e 100%);
 }
 h1 {
   font-family: Almarai;
@@ -130,10 +143,11 @@ a {
   cursor: pointer;
 }
 @media (min-width: 1200px) {
- body,html {
+  body,
+  html {
     padding: 0px 20px;
   }
-  app-about-us {
+  app-hero {
     display: block;
     width: calc(100% + 80px);
     margin-inline: -40px;

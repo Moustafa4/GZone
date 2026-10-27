@@ -1,0 +1,137 @@
+.container-fluid {
+  color: white;
+  // border: 1px solid red;
+  margin-top: 50px;
+}
+i {
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  color: #9243ea;
+}
+.row {
+  padding: 3px 5px;
+  border-radius: 12px;
+  row-gap: 7px;
+  justify-content: space-between;
+}
+.con {
+  text-align: center;
+}
+.con p:first-of-type {
+  font-size: 20px;
+  // margin: 0;
+}
+.col-6 {
+  position: relative;
+  background: #01061c;
+  border-radius: 12px;
+  flex: 0 0 calc((100% - 156px) / 6);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  i {
+    font-size: 40px;
+  }
+  h1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    // font-size: 24  px;
+
+    /* الخطوط على الجنبين */
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      background: linear-gradient(to right, #9243ea, transparent);
+    }
+    &::before {
+      right: -102px;
+    }
+    &::after {
+      left: -102px;
+      background: linear-gradient(to left, #9243ea, transparent);
+    }
+  }
+}
+.diamond {
+  width: 12px;
+  height: 12px;
+  background: #9243ea;
+  transform: rotate(45deg);
+  box-shadow:
+    0 0 10px #9243ea,
+    0 0 20px #9243ea; /* الـ glow */
+}
+/* Mobile */
+
+@media (max-width: 767px) {
+  .row {
+    row-gap: 21px;
+  }
+  .col-6 {
+    flex: 0 0 calc((100% - 12px) / 2);
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    i {
+      font-size: 40px;
+    }
+    h1 {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      // font-size: 24  px;
+
+      /* الخطوط على الجنبين */
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 47px;
+        height: 1px;
+        background: linear-gradient(to right, #9243ea, transparent);
+      }
+      &::before {
+        right: -47px;
+      }
+      &::after {
+        left: -47px;
+        background: linear-gradient(to left, #9243ea, transparent);
+      }
+    }
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-6 {
+    flex: 0 0 calc((100% - 15px) / 3);
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+  .col-6 {
+    flex: 0 0 calc((100% - 156px) / 3);
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  .col-6 {
+    flex: 0 0 calc((100% - 156px) / 6);
+  }
+}

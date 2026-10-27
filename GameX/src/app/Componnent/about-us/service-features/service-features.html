@@ -1,23 +1,33 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-3">
+  <div class="row gx-5">
+    <div class="col-6 col-md-3 col-xxl-3 col-lg-3 col-xl-3">
       <div class="con">
-        <i></i>
-        <p>+{{ CustomerNumber() }}</p>
-        <p>سعيد</p>
+        <i class="bi bi-people-fill"></i>
+        <p>{{ CustomerNumber() | number }}+</p>
+        <p>عميل سعيد</p>
       </div>
     </div>
-    <div class="col-3">
-      <h1>{{ orderNumber() }}</h1>
-      <p>Description of service feature 2.</p>
+    <div class="col-6 col-md-3 col-xxl-3 col-lg-3 col-xl-3">
+      <div class="con">
+        <i class="bi bi-shield-check"></i>
+        <p>{{ orderNumber() | number }}+</p>
+        <p>طلب تم تنفيذه</p>
+      </div>
     </div>
-    <div class="col-3">
-      <h3>Service Feature 3</h3>
-      <p>Description of service feature 3.</p>
+    <div class="col-6 col-md-3 col-xxl-3 col-lg-3 col-xl-3">
+      <div class="con">
+        <i class="bi bi-headset"></i>
+        <p>24/7</p>
+        <p>دعم فني متواصل</p>
+      </div>
     </div>
-    <div class="col-3">
-      <h3>Service Feature 3</h3>
-      <p>Description of service feature 3.</p>
+
+    <div class="col-6 col-md-3 col-xxl-3 col-lg-3 col-xl-3">
+      <div class="con">
+        <i class="bi bi-award"></i>
+        <p>3+</p>
+        <p>سنوات من الثقه</p>
+      </div>
     </div>
   </div>
 </div>

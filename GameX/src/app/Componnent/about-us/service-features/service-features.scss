@@ -1,24 +1,52 @@
-.container-fluid{
-    border: 1px solid red;
-    color: white;
+.container-fluid {
+  color: white;
 }
 
-/* Mobile */
+i {
+  font-size: 70px;
+  padding: 0;
+  margin: 0;
+  color: #9243ea;
+}
+.row{
+  padding: 3px 5px;
+  border-radius: 12px;
+  border: 1px solid #3b297f;
+  row-gap: 7px;
+}
+.con {
+  text-align: center;
+}
 
+.con p:first-of-type {
+  font-size: 33px;
+  margin: 0;
+}
+
+.col-6 {
+  position: relative;
+  background: #01061c;
+  border-radius: 12px;
+  // flex: 0 0 calc(50% - 7.5px);
+}
+
+.col-6:not(:first-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;  /* مش كامل عشان يتلاشى فوق وتحت */
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(255, 255, 255, 0.3) 70%,
+    transparent
+  );
+
+}
 @media (max-width: 767px) {
-}
-
-/* Small Screens */
-
-@media (min-width: 768px) and (max-width: 991px) {
-}
-
-/* Medium Screens */
-
-@media (min-width: 992px) {
-}
-
-/* Large Screens */
-
-@media (min-width: 1200px) {
+  .container-fluid {
+width: 93%;}
 }
