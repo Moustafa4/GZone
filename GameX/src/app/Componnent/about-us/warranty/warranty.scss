@@ -197,7 +197,7 @@ i {
 
 /* Large Screens */
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1250px) {
   .container-fluid {
     height: 100%;
   }
@@ -221,6 +221,89 @@ i {
   }
   .con1 .text {
     width: 67%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-content: end;
+    align-items: self-start;
+    margin-top: 30px;
+    p {
+      font-size: 17px;
+      line-height: 2;
+      width: 90%;
+    }
+  }
+
+  .right {
+    position: relative;
+  }
+  .right .con1::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 2px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.3) 30%,
+      rgba(255, 255, 255, 0.3) 70%,
+      transparent
+    );
+  }
+  .con2 {
+    width: 97%;
+    padding: 50px;
+    .text {
+      width: 100%;
+      p {
+        width: 80%;
+        font-size: 17px;
+      }
+    }
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+  .sig {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 40px;
+    position: relative;
+    p {
+      font-size: 66px;
+      height: 72px;
+      bottom: 30px;
+    }
+  }
+}
+@media (min-width: 1251px) {
+  .container-fluid {
+    height: 100%;
+  }
+  .con1 {
+    //   height: 500px;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+    height: 370px;
+    align-items: baseline;
+    background-size: contain !important;
+    background-image: linear-gradient(rgb(0 0 0 / 19%)), url(/Image/benner/aboutus/about_war.png);
+    background-repeat: no-repeat;
+    background-position: 250px;
+    background-color: #00010d;
+  }
+  i {
+    color: #9243ea;
+    font-size: 40px;
+    margin-left: 7px;
+  }
+  .con1 .text {
+    width: 50%;
     overflow: hidden;
     display: flex;
     flex-flow: column;

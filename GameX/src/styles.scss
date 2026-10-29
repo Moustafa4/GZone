@@ -147,9 +147,32 @@ a {
   html {
     padding: 0px 20px;
   }
-  app-hero {
+  app-hero,
+  app-login {
     display: block;
     width: calc(100% + 80px);
     margin-inline: -40px;
   }
+}
+
+/* GAMEX login page */
+
+app-login {
+  display: block;
+  min-height: 100vh;
+  color: #f8f8ff;
+}
+
+body:has(app-login) {
+  background: #020719;
+}
+
+app-login a {
+  text-decoration: none;
+}
+
+app-login .card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
