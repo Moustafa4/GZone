@@ -6,9 +6,10 @@ import { Footer } from './Componnent/footer/footer';
 import { AboutUs } from './Componnent/about-us/about-us';
 import { Login } from './Auth/login/login';
 import { Header } from './Componnent/header/header';
+import { Products } from './Componnent/products/products';
 @Component({
   selector: 'app-root',
-  imports: [FloatLabelModule, Home, Footer, AboutUs, Login, Header],
+  imports: [FloatLabelModule, Home, Footer, AboutUs, Login, Header, Products],
 
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,

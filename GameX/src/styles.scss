@@ -148,7 +148,8 @@ a {
     padding: 0px 20px;
   }
   app-hero,
-  app-login {
+  app-login,
+  app-header {
     display: block;
     width: calc(100% + 80px);
     margin-inline: -40px;
